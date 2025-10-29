@@ -1,0 +1,224 @@
+faculty.html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #d3d3d3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+
+    .form-container h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container div {
+      margin-bottom: 15px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <img src="https://static.vecteezy.com/system/resources/previews/050/894/408/non_2x/young-woman-teacher-teaching-cartoon-character-illustration-of-teacher-explaining-in-front-of-the-board-free-vector.jpg" alt="faculty" width="50" height="50"/>
+    <h3>Faculty Registration Form</h3>
+    <form>
+      <div>
+        
+        <label>NAME:</label>
+        <input type="text" name="name" required />
+      </div>
+
+      <div>
+        <label>EMD ID:</label>
+        <input type="text" name="emdId" required />
+      </div>
+
+      <div>
+        <label>DEPARTMENT:</label>
+        <select name="department" required>
+          <option value="">Select Department</option>
+          <option value="CSE">CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="MECH">MECH</option>
+          <option value="OTHER">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label>PH. NO.:</label>
+        <input type="text" name="phone" required />
+      </div>
+
+      <div>
+        <label>E-MAIL ID:</label>
+        <input type="email" name="email" required />
+      </div>
+
+      <button type="submit">REGISTER</button>
+    </form>
+  </div>
+
+</body>
+</html>
+student.html
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #d3d3d3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+
+    .form-container h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container div {
+      margin-bottom: 15px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <img src="https://static.vecteezy.com/system/resources/previews/031/610/037/non_2x/a-of-a-3d-cartoon-little-boy-in-class-world-students-day-images-ai-generative-photo.jpg" alt="student" width="50" height="50"/>
+    <h3>Student Registration Form</h3>
+    <form>
+      <div>
+        <label>NAME:</label>
+        <input type="text" name="name" required />
+      </div>
+
+      <div>
+        <label>ROLL NO.:</label>
+        <input type="text" name="rollNumber" required />
+      </div>
+
+      <div>
+        <label>BRANCH:</label>
+        <select name="branch" required>
+          <option value="">Select Branch</option>
+          <option value="CSE">CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="MECH">MECH</option>
+        </select>
+      </div>
+
+      <div>
+        <label>PH. NO.:</label>
+        <input type="text" name="phone" required />
+      </div>
+
+      <div>
+        <label>E-MAIL ID:</label>
+        <input type="email" name="email" required />
+      </div>
+
+      <button type="submit">REGISTER</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
+app.html
+<table>
+  <tr>
+    <td>
+      <app-faculty></app-faculty>
+    </td>
+    <td>
+      <app-student></app-student>
+    </td>
+  </tr>
+</table>
